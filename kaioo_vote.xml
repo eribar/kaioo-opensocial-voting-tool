@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/******************************************************************************\
+ * 
+ * Kaioo OpenSocial Voting Tool
+ * 
+ * Copyright (C) 2009 Eric Barmeyer
+ * 
+ * This program is free software; you can redistribute it and/or modify it 
+ * under the terms of the GNU General Public License as published by the 
+ * Free Software Foundation; either version 3 of the License, or (at your 
+ * option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT 
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or 
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+ * more details.
+ * 
+ * You should have received a copy of the GNU General Public License along with 
+ * this program; if not, see <http://www.gnu.org/licenses/>.
+ * 
+ ******************************************************************************/
+-->
+<Module>
+<ModulePrefs 
+	title="Kaioo OpenSocial Voting Tool"
+	description=""
+>
+<Require feature="opensocial-0.7"/>
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html" view="default">
+<![CDATA[
+<!-- load stylesheets -->
+<style type="text/css">
+@import url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css") screen;
+@import url("http://taynt.de/kaioo/kaioo_vote.css") screen;
+</style>
+
+<!-- load jquery from google -->
+<script src="http://www.google.com/jsapi"></script>
+<script>google.load("jquery", "1");google.load("jqueryui", "1.7.1");</script>
+
+
+<!-- begin with tab container -->
+<div id="kosjsf-tabs">
+	<ul>
+		<li class="vote"><a href="#kosjsf-vote"></a></li>
+	</ul>
+	<div id="kosjsf-vote">
+		<form>
+		<fieldset>
+		<legend></legend>
+		<div class="question">
+			<div>
+			<h2></h2>
+			<p class="text"></p>
+			<p class="input">
+				<label></label>
+			</p>
+		</div>
+		<div class="footer"><a class="previous"></a><a class="next"></a><a class="submit"></a></div>
+		</fieldset>
+		</form>
+	</div>
+</div>
+
+<!-- load kaioo opensocial javascript foundation -->
+<script src="http://taynt.de/kaioo/kosjsf.js"></script>
+<script src="http://taynt.de/kaioo/kaioo_vote.js"></script>
+]]>
+</Content>
+</Module>

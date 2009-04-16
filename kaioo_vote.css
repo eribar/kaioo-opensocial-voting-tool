@@ -1,0 +1,170 @@
+@import "reset.css";
+
+body {
+	background: url(images/wait.gif) center center no-repeat;
+	min-height: 50px;
+}
+
+#kosjsf-tabs, #kosjsf-vote {
+	visibility: hidden;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+
+#kosjsf-tabs ul.ui-tabs-nav {
+	padding: 0 0 0 3px;
+	background: url(ui-tabs-nav.png) repeat-x;
+}
+
+#kosjsf-tabs .ui-tabs-nav li {
+	margin: 2px 2px -1px 0;
+}
+
+#kosjsf-tabs .ui-tabs-nav li a:link,
+#kosjsf-tabs .ui-tabs-nav li a:visited,
+#kosjsf-tabs .ui-tabs-nav li a:hover,
+#kosjsf-tabs .ui-tabs-nav li a:active {
+	padding: 4px 6px 2px 6px;
+	color: #999;
+	font-weight: bold;
+}
+
+#kosjsf-tabs .ui-tabs-nav li.ui-tabs-selected a:link,
+#kosjsf-tabs .ui-tabs-nav li.ui-tabs-selected a:visited,
+#kosjsf-tabs .ui-tabs-nav li.ui-tabs-selected a:hover,
+#kosjsf-tabs .ui-tabs-nav li.ui-tabs-selected a:active {
+	color: #6894c2;
+}
+
+#kosjsf-tabs .ui-tabs-panel{
+	padding: 3px 0 0 0;
+}
+
+#kosjsf-tabs .ui-tabs-nav li.vote a {
+	background: url(images/report.png) 3px 2px no-repeat;
+	padding: 4px 6px 2px 22px;
+}
+
+#kosjsf-vote fieldset {
+	border: 1px #AAA solid;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	min-height: 164px;
+	background: url(images/fieldset-bg.png) repeat-x;
+}
+
+#kosjsf-vote fieldset legend {
+	margin: 0 0 0 11px;
+	font-weight: bold;
+	color: #333;
+	padding: 0 0 0 19px;
+	background: url(images/help.png) 1px 2px no-repeat;
+	line-height: 21px;
+}
+
+#kosjsf-vote div {
+	padding: 0;
+	margin: 0;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	padding: 9px;
+	color: #000;
+	font-size: 13px;
+}
+
+#kosjsf-vote div h2 {
+	font-weight: bold;
+	color: #000;
+}
+
+#kosjsf-vote div p {
+	padding: 7px 0 9px 0;
+}
+
+#kosjsf-vote p.input {
+	clear: both;
+	margin: 2px 0 7px 0;
+	display: block;
+	width: 100%;
+}
+
+#kosjsf-vote label{
+	font-size: 11px;
+	float: left;
+	line-height: 23px;
+	display: block;
+	width: 180px;
+	border-width: 0 1px 0 0;
+	border-style: dotted;
+	border-color: #6894c2;
+	min-height: 23px;
+}
+
+#kosjsf-vote input{
+	float: left;
+	line-height: 23px;
+}
+
+#kosjsf-vote div.question {
+	margin: 0;
+	padding: 0;
+}
+
+#kosjsf-vote div.footer {
+	height: 21px;
+	padding: 6px 3px 3px 3px;
+	margin: 0;
+}
+
+#kosjsf-vote div.footer a.next, #kosjsf-vote div.footer a.submit {
+	float: right;
+}
+
+#kosjsf-vote div.footer a.submit {
+	width: 81px;
+}
+
+#kosjsf-vote div.footer a.previous {
+	float: left;
+}
+
+#kosjsf-vote div.footer a {
+	cursor: pointer;
+	width: 61px;
+	text-align: center;
+	line-height: 18px;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	height: 20px;
+	background: url(images/button-bg.png) repeat-x;
+	border: 1px solid #97BFFB;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #666;
+}
+
+#kosjsf-vote div.footer a:hover {
+	border-color: #6581AA;
+	color:#000;
+}
+
+#kosjsf-vote p.category {
+	clear: both;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 0 3px 0;
+	margin: 3px 0 3px 0;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #6894c2;
+}
+
+#kosjsf-vote p.info {
+	font-size: 10px;
+	color: #444;
+}
+
+#kosjsf-vote p.info b {
+	font-weight: bold;
+}
